@@ -17,13 +17,12 @@ import static org.junit.Assert.assertEquals;
         private By orderScooterToday= By.id("accordion__heading-3"); // локатор для кнопки "Можно ли заказать самокат прямо на сегодня?"
         private By extendReturnScooter= By.id("accordion__heading-4"); // локатор для кнопки "Можно ли продлить заказ или вернуть самокат раньше?"
         private By chargingScooter= By.id("accordion__heading-5"); // локатор для кнопки "Вы привозите зарядку вместе с самокатом?"
-        private By cancelTheOrder= By.id("accordion__heading-6"); // локатор для кнопки "Можно ли отменить заказ?"
         private By goingMKAD = By.id("accordion__heading-7"); // локатор для кнопки "Я жизу за МКАДом, привезёте?"
      public void clickCookieButton(){
      driver.findElement(cookieButton).click();}// метод для нажатия на кнопку Куки
      public void clickUpperOrder() {
      driver.findElement(upperOrder).click();
-     } // метод для нажатия на кнопку на еще одну кнопку "Заказать"
+     } // метод для нажатия на кнопку на  кнопку "Заказать"
     public void testAccordion0(){
         WebElement textOne = driver.findElement(howMuch);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", textOne);
@@ -34,7 +33,7 @@ import static org.junit.Assert.assertEquals;
          WebElement textOne = driver.findElement(iWantSomeScooters);
          ((JavascriptExecutor) driver).executeScript("arguments[1].scrollIntoView();", textOne);
          textOne.click();
-         assertEquals("Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.", driver.findElement(By.id("accordion__panel-1")).getText());
+         assertEquals("Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.", driver.findElement ( By.id("accordion__panel-1")).getText());
      }
      public void testAccordion2() {
          WebElement textOne = driver.findElement(rentalTimeCalculated);

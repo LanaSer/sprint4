@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestHomePage
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 2.444 sec <<< FAILURE!
-TestAccordion(TestHomePage)  Time elapsed: 2.385 sec  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 2.394 sec <<< FAILURE!
+TestAccordion(TestHomePage)  Time elapsed: 2.339 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[Сутки — 400 рублей. Оплата курьеру — наличными или картой.]> but was:<[]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at Pages.HomePage.testAccordion0(HomePage.java:31)
+	at Pages.HomePage.testAccordion0(HomePage.java:30)
 	at TestHomePage.TestAccordion(TestHomePage.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -42,7 +42,7 @@ org.junit.ComparisonFailure: expected:<[Сутки — 400 рублей. Опл�
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-TestAccordion(TestHomePage)  Time elapsed: 2.386 sec  <<< ERROR!
+TestAccordion(TestHomePage)  Time elapsed: 2.34 sec  <<< ERROR!
 java.lang.NullPointerException
 	at TestHomePage.closeDown(TestHomePage.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

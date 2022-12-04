@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="TestHomePage" time="4.771" errors="1" skipped="0">
+<testsuite tests="2" failures="1" name="TestHomePage" time="4.679" errors="1" skipped="0">
   <properties>
     <property name="idea.version" value="2022.3"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -65,11 +65,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="TestHomePage" name="TestAccordion" time="2.385">
+  <testcase classname="TestHomePage" name="TestAccordion" time="2.339">
     <failure message="expected:&lt;[Сутки — 400 рублей. Оплата курьеру — наличными или картой.]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Сутки — 400 рублей. Оплата курьеру — наличными или картой.]&gt; but was:&lt;[]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at Pages.HomePage.testAccordion0(HomePage.java:31)
+	at Pages.HomePage.testAccordion0(HomePage.java:30)
 	at TestHomePage.TestAccordion(TestHomePage.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -108,16 +108,16 @@
     <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 22109
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 25516
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1670098791.922][WARNING]: This version of ChromeDriver has not been tested with Chrome version 108.
-���. 03, 2022 11:19:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1670143256.881][WARNING]: This version of ChromeDriver has not been tested with Chrome version 108.
+���. 04, 2022 11:40:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 108, so returning the closest version found: 107
 </system-err>
   </testcase>
-  <testcase classname="TestHomePage" name="TestAccordion" time="2.386">
+  <testcase classname="TestHomePage" name="TestAccordion" time="2.34">
     <error type="java.lang.NullPointerException">java.lang.NullPointerException
 	at TestHomePage.closeDown(TestHomePage.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
